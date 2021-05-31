@@ -1,6 +1,6 @@
 package com.example.imagesearchapp.di
 
-import com.example.imagesearchapp.api.Api
+import com.example.imagesearchapp.api.UnSplashApi
 import com.example.imagesearchapp.others.Constants.BASE_URL
 import dagger.Module
 import dagger.Provides
@@ -31,6 +31,6 @@ object AppModule {
 
     @Singleton
     @Provides
-    fun provideApi(retrofit: Retrofit): Api = retrofit.create(Api::class.java)
+    fun provideApi(retrofit: Retrofit): UnSplashApi = retrofit.create(UnSplashApi::class.java)
 
 }
